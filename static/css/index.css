@@ -1,0 +1,428 @@
+@charset "UTF-8";
+html, body {
+  margin: 0px;
+  padding: 0px;
+}
+a {
+  text-decoration:none;
+}
+a:visited{
+  color:#272D38;
+}
+a:hover{
+  text-decoration:none;
+}
+.container {
+  
+  width: 1280px;
+}
+
+.banner {
+  width: 100%;
+  height: 30%;
+}
+
+.nav-area {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-45%) translateY(-50%);
+  padding-left: 20px;
+  padding-right: 20px;
+  top: 7%;
+  width: 54%;
+  background-color: white;
+}
+
+.nav {
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: black;
+  font-family: 微軟正黑體;
+  font-weight:bold;
+  border-bottom: solid 3px white;
+  display: inline-block;
+  height: 20px;
+  width: 18%;
+  padding-left: 21px;
+  padding-right: 21px;
+  font-family: 微軟正黑體;
+  text-align: center;
+}
+.nav:hover{
+    border-bottom: solid 3px #FFD43A;
+    cursor: pointer;
+}
+
+.title {
+  font-size: 40px;
+  letter-spacing: 0px;
+  color: white;
+  font-family: 微軟正黑體;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 35%;
+  left: 5%;
+}
+
+.title_hr {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 80px;
+  left: 5px;
+  height: 5px;
+  border:solid 1px #FFD43A;
+  background-color: #FFD43A;
+}
+
+.title_fin {
+  margin: 0;
+  font-size: 100px;
+  letter-spacing: 0px;
+  color:white;
+  
+}
+
+.subtitle {
+  font-size: 20px;
+  letter-spacing: 0px;
+  color: white;
+  font-family: 微軟正黑體;
+  margin: 0;
+  padding-left: 7px;
+  left: 22%;
+}
+
+.about_us {
+  font-size: 50px;
+  font-weight:bold;
+  letter-spacing: 1px;
+  color: #272D38;
+  font-family: 微軟正黑體;
+  text-align: center;
+}
+
+.about_text {
+  font-size: 20px;
+  letter-spacing: 0px;
+  color: #272D38;
+  font-family: 微軟正黑體;
+  padding: 20px;
+  padding-top: 0;
+  margin: 70px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about_area {
+    margin-top: 2%;
+    margin-bottom: 5%;
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: center;
+}
+
+.about_num {
+  font-size: 60px;
+  letter-spacing: 0;
+  color: #FFD43A;
+  font-family: 微軟正黑體;
+  display: inline-block;
+  text-align: center;
+  margin: 5%;
+}
+
+.about_t {
+  font-size: 20px;
+  letter-spacing: 0;
+  color: #272D38;
+  font-family: 微軟正黑體;
+  display: inline-block;
+  text-align: center;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.about_img {
+  display: inline-block;
+  text-align: center;
+}
+
+.concept {
+  display: block;
+  position: relative;
+  height: 400px;
+  background-color: #272D38;
+}
+
+.concept_img {
+  position: absolute;
+  left: 0%;
+  height: 100%;
+  width: 50%;
+}
+
+.concept_hr {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 40px;
+  height: 1px;
+  left: 1px;
+  border:solid 1px #FFD43A;
+  background-color: #FFD43A;
+}
+
+.concept_text {
+  position: absolute;
+  left: 53%;
+  top: 10%;
+  font-size: 20px;
+  letter-spacing: 0px;
+  color: white;
+  font-family: 微軟正黑體;
+}
+
+.concept_title {
+  position: absolute;
+  margin-top: 10px;
+  margin-bottom: 0;
+  width: 150px;
+  font-size: 30px;
+}
+
+.concept_content {
+  position: absolute;
+
+  margin-top: 30px;
+  padding-top: 0;
+  width: 500px;
+  font-size: 15px;
+  letter-spacing: 0;
+  color: white;
+  font-family: 微軟正黑體;
+}
+
+.section_inv {
+  position: absolute;
+  width: 450px;
+  height: 100px;
+  top: 550%;
+  margin: 10px;
+}
+
+.section_trend {
+  position: absolute;
+  width: 450px;
+  height: 100px;
+  top: 750%;
+  margin: 10px;
+}
+
+.section_ml {
+  position: absolute;
+  width: 450px;
+  height: 100px;
+  top: 950%;
+  margin: 10px;
+}
+
+.concept_field {
+  font-size: 18px;
+  letter-spacing: 0;
+  color: white;
+  font-family: 微軟正黑體;
+  position: absolute;
+  left: 15%;
+  top: 9%;
+  background-color: #424242;
+  width: 50%;
+  height: 30px;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+.icon {
+  position: absolute;
+  height: 35px;
+  width: 35px;
+}
+
+.info_area {
+  height: 320px;
+ 
+}
+
+.info_news {
+  position: absolute;
+  height: 300px;
+  width: 20%;
+  padding-top: 35px;
+  margin: 0;
+  left: 13%;
+  text-align: left;
+  font-size: 20px;
+  letter-spacing: 0;
+  color: #272D38;
+  font-family: 微軟正黑體;
+}
+
+.info_pro {
+  position: absolute;
+  height: 300px;
+  width: 20%;
+  padding-top: 35px;
+  margin: 0;
+  left: 45%;
+  text-align: left;
+  font-size: 20px;
+  letter-spacing: 0;
+  color: #272D38;
+  font-family: 微軟正黑體;
+}
+
+.info_mem {
+  position: absolute;
+  height: 300px;
+  width: 20%;
+  padding-top: 35px;
+  margin: 0;
+  left: 74%;
+  text-align: left;
+  font-size: 20px;
+  letter-spacing: 0;
+  color: #272D38;
+  font-family: 微軟正黑體;
+}
+
+.info_title {
+  margin:0;
+  margin-bottom: 5%;
+  margin-top: 10px;
+  font-weight:900;
+  font-size: 30px;
+  color:#272D38;
+}
+
+.info_text {
+  font-size: 20px;
+  letter-spacing: 0;
+  color: #272D38;
+  font-family: 微軟正黑體;
+  position: absolute;
+  margin: 0;
+  padding-bottom: 0;
+}
+
+.info_link {
+  position: absolute;
+  font-weight: bold;
+  bottom: 10%;
+  right: 5%;
+  font-size: 13px;
+  letter-spacing: 0;
+  color: #FFD43A;
+  font-family: 微軟正黑體;
+}
+.info_link:visited{
+  color:#FFD43A;
+}
+
+.info_name {
+  margin: 0;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #272D38;
+  font-family: 微軟正黑體;
+}
+
+.info_mName {
+  font-size: 18px;
+  font-weight: bold;
+  color: #272D38;
+  font-family: 微軟正黑體;
+  padding-top: 15px;
+}
+
+.footer_area {
+  height: 300px;
+  background-color: #272D38;
+}
+
+.footer_title {
+  font-size: 25px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: white;
+  font-family: 微軟正黑體;
+}
+
+.footer_text {
+  font-size: 13px;
+  letter-spacing: 0;
+  color: white;
+  font-family: 微軟正黑體;
+  padding: 5px;
+}
+
+.footer_school {
+  position: absolute;
+  height: 200px;
+  width: 20%;
+  padding-top: 20px;
+  margin: 0;
+  left: 8%;
+  text-align: left;
+}
+
+.footer_contact {
+  position: absolute;
+  height: 200px;
+  width: 20%;
+  padding-top: 20px;
+  margin: 0;
+  left: 32%;
+  text-align: left;
+}
+
+.footer_department {
+  position: absolute;
+  height: 200px;
+  width: 20%;
+  padding-top: 20px;
+  margin: 0;
+  left: 50%;
+  text-align: left;
+}
+
+.footer_language {
+  position: absolute;
+  height: 200px;
+  width: 20%;
+  padding-top: 20px;
+  margin: 0;
+  left: 73%;
+  text-align: left;
+}
+
+.footer_hr {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 85%;
+  left: 50px;
+  bottom: 20%;
+  size:15px;
+  border:solid 1px #494F58;
+  background-color: #494F58;
+}
+
+.footer_logo {
+  position: absolute;
+  right: 11%;
+  bottom: 20px;
+}

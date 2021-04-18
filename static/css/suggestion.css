@@ -1,0 +1,346 @@
+@charset "UTF-8";
+html, body {
+  margin: 0px;
+  padding: 0px;
+}
+a {
+  text-decoration:none;
+}
+a:visited{
+  color:#2C3641;
+}
+.contenter {
+  position: relative;
+  width: 1280px;
+}
+
+.header {
+  width: 100%;
+}
+
+.nav-area {
+    
+    /* background-color: #272D38; */
+   
+    position: absolute;
+    left: 50%;
+   
+    transform: translateX(-45%) translateY(-50%);
+    padding-left: 20px;
+   padding-right: 20px;
+   top: 57.3px;
+   width: 54%;
+  background-color: white;
+}
+.nav-block{
+  height: 100px;
+}
+.nav {
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: white;
+    font-family: Trebuchet MS,微軟正黑體;
+    font-weight:bold;
+    border-bottom: solid 3px white;
+    display: inline-block;
+    height: 20px;
+    padding: 8px;
+    width: 18%;
+    padding-left: 21px;
+    padding-right: 21px;
+    font-family: 微軟正黑體;
+    text-align: center;
+}
+.nav:hover{
+    border-bottom: solid 3px #FFD43A;
+    cursor: pointer;
+}
+.suggest_block{
+  height: 840px;
+}
+
+
+.left_block {
+  position: absolute;
+  display: inline-block;
+  width: 640px;
+  height: 640px;
+  left: 3%;
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+}
+
+.left_container {
+  position: relative;
+  left:10%;
+  top: 5%;
+  width: 80%;
+  height: 45%;
+}
+
+.photo {
+  width: 100%;
+  height: 100%;
+}
+
+.left_title {
+  font-size: 55px;
+  letter-spacing: 1px;
+  color: white;
+  font-family: Trebuchet MS,微軟正黑體;
+  position: absolute;
+  left: 0;
+  top: 45%;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  font-weight: 900;
+}
+.left_title:hover{
+    color: #FFD43A;
+    cursor: pointer;
+}
+.left_text {
+    position: relative;
+ 
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #2C3641;
+  font-family: Trebuchet MS,微軟正黑體;
+  margin-top: 40px;
+  margin-bottom:5px; 
+  text-align: center;
+}
+
+.right_block {
+  position: absolute;
+  width: 50%;
+  height: 90%;
+  left: 50%;
+  margin: 0;
+  padding: 0;
+}
+
+.state_block {
+  position: relative;
+
+}
+.state_text_block{
+    position: relative;
+    margin-top: 20px;
+    border: solid #ECEEF2;
+    left: 10%;
+    background-color: #ECEEF2;
+    width: 80%;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 900;
+  letter-spacing: 0px;
+  color: #2C3641;
+  font-family: Trebuchet MS,微軟正黑體;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+hr {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 80%;
+  left: 10%;
+  background-color: #424242;
+  border-color: #424242;
+  height: 2px;
+}
+
+.suggest_block {
+  text-align: center;
+  position: relative;
+  
+}
+
+.state {
+    font-size: 40px;
+    font-weight: 800;
+  letter-spacing: 1px;
+  color: #FFD43A;
+  font-family: Trebuchet MS,微軟正黑體,微軟正黑體;
+  text-align: center;
+  margin-bottom: 0%;
+  margin:0; 
+  padding-top:10px;
+}
+
+.text {
+  font-size: 25px;
+  letter-spacing: 0;
+  color: #2C3641;
+  font-family: Trebuchet MS,微軟正黑體,微軟正黑體;
+  text-align: center;
+}
+
+.s_block {
+  position: relative;
+  margin: auto;
+  top:30px;
+  border: solid #ECEEF2;
+  padding: 10px;
+  padding-top:20px;
+  width: 500px;
+  height: 300px;
+  background-color: #ECEEF2;
+}
+
+.box1 {
+  border: 3px #c9cbce;
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  border-right-style: dashed;
+  border-bottom-style: dashed;
+  width: 50%;
+  height: 50%;
+}
+
+.box2 {
+  border: 3px #c9cbce;
+  position: absolute;
+  left: 50%;
+  top: 1px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  border-bottom-style: dashed;
+  width: 50%;
+  height: 50%;
+}
+
+.box3 {
+  border: 3px #c9cbce;
+  position: absolute;
+  left: 1px;
+  top: 50%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  border-right-style: dashed;
+  width: 50%;
+  height: 50%;
+}
+
+.box4 {
+  border: 3px #c9cbce;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 50%;
+  height: 50%;
+}
+
+.box_title {
+  font-size: 25px;
+  letter-spacing: 1px;
+  color: #c9cbce;
+  font-family: Trebuchet MS,微軟正黑體;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+.box_num {
+  font-size: 45px;
+  letter-spacing: 1px;
+  color: #FFD43A;
+  font-family: Trebuchet MS,微軟正黑體;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  padding: 5px;
+}
+.footer_area {
+  height: 300px;
+  background-color: #272D38;
+}
+
+.footer_title {
+  font-size: 25px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: white;
+  font-family: 微軟正黑體;
+}
+
+.footer_text {
+  font-size: 13px;
+  letter-spacing: 0;
+  color: white;
+  font-family: 微軟正黑體;
+  padding: 5px;
+}
+
+.footer_school {
+  position: absolute;
+  height: 200px;
+  width: 20%;
+  padding-top: 20px;
+  margin: 0;
+  left: 8%;
+  text-align: left;
+}
+
+.footer_contact {
+  position: absolute;
+  height: 200px;
+  width: 20%;
+  padding-top: 20px;
+  margin: 0;
+  left: 32%;
+  text-align: left;
+}
+
+.footer_department {
+  position: absolute;
+  height: 200px;
+  width: 20%;
+  padding-top: 20px;
+  margin: 0;
+  left: 50%;
+  text-align: left;
+}
+
+.footer_language {
+  position: absolute;
+  height: 200px;
+  width: 20%;
+  padding-top: 20px;
+  margin: 0;
+  left: 73%;
+  text-align: left;
+}
+
+.footer_hr {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 85%;
+  left: 50px;
+  bottom: 20%;
+  size:15px;
+  border:solid 1px #494F58;
+  background-color: #494F58;
+}
+
+.footer_logo {
+  position: absolute;
+  right: 11%;
+  bottom: 20px;
+}

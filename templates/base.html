@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="Shortcut Icon"type="image/x-icon" href="favicon.ico">
+
+        <title>i-Fund Manager | NTUSTIM</title>
+
+    
+        
+        <link href='{%static "css/bootstrap.min.css"%}' rel="stylesheet">
+        <link href='{%static "css/style.css"%}'rel="stylesheet">
+        <link href='{%static "css/carousel.css"%}' rel="stylesheet">
+        <link href='{%static "css/ie10-viewport-bug-workaround.css"%}'rel="stylesheet">
+        <link href='{%static "css/index.css"%}'rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <ui class="row nav-area ">
+                    <li class="nav col-3"><a href="#">HOME</a></li>
+                    <li class="nav col-3"><a href="#">ABOUT</a></li>
+                    <li class="nav col-3"><a href="#">SUGGESTION</a></li>
+                    <li class="nav col-3"><a href="#">CHART</a></li>
+                </ui>
+                <div class="title">
+                    <div class="title_hr"> </div>
+                    <h1 class="title_fin">i-Fund <br>Manager</h1>
+                    <p class="subtitle">Market Forecasting Machine</p>
+                </div>
+            </div>
+            
+            
+          </div>
+          <img class="banner" src='{%static "img/1.jpg"%}' alt="">
+    {% block content %}
+    {% endblock  %}
+    </body>
+    
+    <script type="text/javascript" src='{%static "js/jquery-3.5.1.min.js"%}'></script>
+    <script type="text/javascript" src='{%static "js/bootstrap.min.js"%}'></script>
+    <script type="text/javascript" src='{%static "js/holder.min.js.下載"%}'></script>
+    <script type="text/javascript" src='{%static "js/ie-emulation-modes-warning.js.下載"%}'></script>
+    <script type="text/javascript" src='{%static "js/ie10-viewport-bug-workaround.js.下載"%}'></script>
+</html>
