@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+  
+<div class="about_title">
+    <div class="title_offer">我們提供什麼？</div>
+        <hr class="bar_area">
+        <hr class="bar_yellow">
+        <h1 class="about_title_fin">內容介紹及操作說明 </h1>
+        <p class="about_subtitle">我們的目標在於讓使用者能藉由我們的網頁  <br> 做出投資的最佳決定</p>
+        <div class="title_triangle"></div>
+    </div>
+    <div class="about_subtitle"></div>
+</div>
+<img class="banner"src='{%static "img/p2_1.jpg" %}' alt="">
+<div class="container">   
+    
+    <div class="row">
+        <h2 class="about_us col-12">組成</h2>
+        <p class="about_p col-12">我們的技術包含
+
+        　　</p>
+        <div class="about_area row">
+            <div class="col-4">
+                <div class="about_section">
+                    <img src='{%static "img/p2_02.jpg" %}' class="about_img"alt="">
+                    <div class="about_block">
+                        <p class="about_text">資料</p>
+                        <p class="about_content">27年資料，306筆數據</p>
+                        <div class="about_triangle"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="about_section">
+                    <img src='{%static "img/p2_03.jpg" %}' class="about_img"alt="">
+                    <div class="about_block">
+                        <p class="about_text">建模</p>
+                        <p class="about_content">SVM 支援向量機器演算法</p>
+                        <div class="about_triangle"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="about_section">
+                    <img src='{%static "img/p2_04.jpg" %}' class="about_img"alt="">
+                    <div class="about_block">
+                        <p class="about_text">計算</p>
+                        <p class="about_content">報酬計算，準確率計算</p>
+                        <div class="about_triangle"></div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<div class="instr">
+
+    <div class="container">
+        <div class="row">
+            <p class="instr_title col-12">說明</p>
+            <div class="instr_block col-12">
+                <div class="row">
+                    <img class="instr_img col-6"src='{%static "img/p2_05.png" %}' alt="">
+                    <div class="instr_hr "></div>
+                    <div class="instr_text col-5">請在左方選你的投資偏好<br>選好後又方會顯示出就現在的市場狀態來說 <br>  推薦給您的投資組合</div>
+                </div>
+                
+            </div>
+            <div class="instr_block col-12">
+                <div class="row">
+                    <div class="instr_text col-5">我們會計算給您看 <br>如果你在所選時間 <br>開始依照我們的建議 <br>投資十元 <br>到現在能賺多少錢 <br>並比對如果採用每種投資標的的各分25%的樣子</div>
+                    <div class="instr_hr"></div>
+                    <img class="instr_img2 col-6"src='{%static "img/p2_06.png" %}' alt="">
+                </div>
+                
+            </div>
+        
+        </div>
+    </div>
+    
+</div>
+
+{% endblock  %}

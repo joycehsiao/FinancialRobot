@@ -1,29 +1,13 @@
 @charset "UTF-8";
 
-html, body {
-  margin:0px;
-  padding:0px;
-  padding-top:0;
-}
 
-a {
-  text-decoration:none;
-}
-a:visited{
-  color:#272D38;
-}
-.contenter {
-  position: relative;
-  width: 1280px;
-  margin: 0;
-}
 
 .header {
   width: 100%;
   margin:0;
 }
 
-.nav-area {
+.about_nav-area {
   margin: 0;
   position: absolute;
   left: 50%;
@@ -35,7 +19,7 @@ a:visited{
   background-color: white;
 }
 
-.nav {
+.about_nav {
     font-size: 15px;
     letter-spacing: 1px;
     color: block;
@@ -56,7 +40,7 @@ a:visited{
       cursor: pointer;
   }
 
-.title {
+.about_title {
   
   font-size: 14px;
   letter-spacing: 0px;
@@ -110,13 +94,13 @@ a:visited{
   left: 3%;
 }
 
-.title_fin {
+.about_title_fin {
   margin: 5px;
   padding-top: 25px;
   font-size: 35px;
 }
 
-.subtitle {
+.about_subtitle {
   font-size: 20px;
   letter-spacing: 0px;
   color: white;
@@ -145,40 +129,37 @@ a:visited{
   font-family: 微軟正黑體;
   font-weight: 900;
   text-align: left;
-  margin-left: 50px;
+  margin: 50px;
   margin-bottom: 5px;
 }
 
-.about_subtitle {
+ .about_p {
   font-size: 20px;
   letter-spacing: 0px;
   color: #424242;
   font-family: 微軟正黑體;
-  margin: 25px;
+  margin: 50px;
   padding-top: 0;
   margin-top: 0;
-  margin-left: 50px;
   margin-bottom: 0;
   text-align: left;
-}
+} 
 
 .about_area {
   position: relative;
   width: 98%;
   margin: 10px;
   height: 300px;
-}
+} 
 
 .about_section {
-  position: relative;
   display: inline-block;
-  width: 31%;
+  padding: 0 10px;
   height: 100%;
   margin-left: 10px;
 }
 
 .about_img {
-  position: absolute;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -188,7 +169,7 @@ a:visited{
   position: absolute;
   margin: 0;
   padding: 5px;
-  top: 70%;
+  top: 60%;
   right: 0;
   background-color: white;
   box-shadow: 5px 8px 20px 0px black;
@@ -196,14 +177,14 @@ a:visited{
   height: 30%;
 }
 
-.about_text {
+/* .about_text {
   font-size: 15px;
   letter-spacing: 1px;
   color: #272D38;
   font-family: 微軟正黑體;
   font-weight: 900;
   margin: 5px;
-}
+} */
 
 .about_content {
   font-size: 10px;
@@ -228,20 +209,18 @@ a:visited{
 
 .instr {
   display: block;
-  position: relative;
-  height: 900px;
   background-color: #272D38;
 }
 
 .instr_title {
-  font-size: 50px;
+  font-size: 40px;
   letter-spacing: 1px;
-  color: white;
+  color: #ffffff;
   font-family: 微軟正黑體;
-  padding-left: 80px;
-  padding-top: 15px;
-  margin-bottom:15px; 
   font-weight: 900;
+  text-align: left;
+  margin: 50px;
+  margin-bottom: 5px;
 }
 
 .instr_block {
@@ -260,25 +239,18 @@ a:visited{
 }
 
 .instr_hr {
-  display: inline-block;
-  width: 4px;
-  height: 90%;
-  margin-left: 40px;
+  width: 5px;
   margin-right: 10px;
   background-color: #FFD43A;
   border: solid 1px #FFD43A;
+  
 }
 
 .instr_text {
-  font-size: 30px;
+  font-size: 25px;
   letter-spacing: 1px;
   color: white;
   font-family: 微軟正黑體;
-  position: absolute;
-  padding: 15px;
-  width: 30%;
-  height: 50%;
-  display: inline-block;
   top: 5%;
   margin-left: 10px;
 }

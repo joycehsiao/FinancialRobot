@@ -2,4 +2,89 @@
 {% load static %}
 
 {% block content %}
+<div >
+    <div class="title">
+    <div class="title_hr"> </div>
+    <h1 class="title_fin">i-Fund <br>Manager</h1>
+    <p class="subtitle">Market Forecasting Machine</p>
+</div>
+    
+<img class="banner" src='{%static "img/1.jpg"%}' alt="">
+<div class="container">
+    <div class="row">
+        <h2 class="index_about_us col-12">關於我們</h2>
+        <p class="index_about_text col-12">我們是來自管不分的學生</p>
+        <div class="index_about_area col-12">
+            <div class="row">
+                <div class="col-4">
+                    <p class="index_about_num">300</p>
+                    <p class="index_about_t">days.</p>
+                </div>
+                <div class="col-4">
+                    <p class="index_about_num">4</p>
+                    <p class="index_about_t">members.</p>
+                </div>
+                <div class="col-4">
+                    <p class="index_about_num">100,000+</p>
+                    <p class="index_about_t">data.</p>
+                </div>
+                
+                
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="row concept">
+        <div>
+            <img class="concept_img"src='{%static "img/2.jpg" %}'>
+        </div>
+        <div class="concept_text">
+            <hr class="concept_hr">
+            <p class="concept_title">概念</p><br>
+            <p class="concept_content">我們採用總經指標作為參數進行機器學習去對未來景氣趨勢做預測。<br>
+                總經指標會比其他領先指標更穩定，使得我們的預測更可靠。
+            </p>
+            <div class="section_inv">
+                <img class="icon"src="https://goo.gl/a7jXri" >
+                <div class="concept_field">投資</div>
+            </div>
+            <div class="section_trend">
+                <img class="icon"src="https://goo.gl/a7jXri" >
+                <div class="concept_field">趨勢</div>
+            </div>
+            <div class="section_ml">
+                <img class="icon"src="https://goo.gl/a7jXri" >
+                <div class="concept_field">機器學習</div>
+            </div>
+        </div>
+    </div>
+    <div class="row info_area">
+        <div class="info_news">
+        <hr class="concept_hr">
+        <p class="info_title">合作</p>
+        <img width="150px"height="150px"src='{%static "img/images-1.jpg" %}'>
+        <p class="info_name">證券投資信託公司</p>
+        <!-- <a class="info_link"href="https://www.fhtrust.com.tw/">LEARN MORE>></a> -->
+        </div>
+        <div class="info_pro">
+        <hr class="concept_hr">
+        <p class="info_title">指導教授</p>
+        <img width="150px"height="150px"src='{%static "img/t.jpg" %}'>
+        <p class="info_name">查士朝 教授 </p>
+        
+        </div>
+        <div class="info_mem">
+        <hr class="concept_hr">
+        <p class="info_title">MEMBER</p>
+        <ui style="list-style-type:none">
+            <li class="info_mName">@wenhui_hsiao</li>
+            <li class="info_mName">@shuuuting</li>
+            <li class="info_mName">@arstajen</li>
+            <li class="info_mName">@kuochen_</li>
+        </ui>
+        </div>
+    </div>
+
+</div>
 {% endblock  %}

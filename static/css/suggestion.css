@@ -1,87 +1,14 @@
 @charset "UTF-8";
-html, body {
-  margin: 0px;
-  padding: 0px;
+.suggestion_container{
+  margin-top: 100px;;
 }
-a {
-  text-decoration:none;
-}
-a:visited{
-  color:#2C3641;
-}
-.contenter {
-  position: relative;
-  width: 1280px;
-}
-
-.header {
-  width: 100%;
-}
-
-.nav-area {
-    
-    /* background-color: #272D38; */
-   
-    position: absolute;
-    left: 50%;
-   
-    transform: translateX(-45%) translateY(-50%);
-    padding-left: 20px;
-   padding-right: 20px;
-   top: 57.3px;
-   width: 54%;
-  background-color: white;
-}
-.nav-block{
-  height: 100px;
-}
-.nav {
-    font-size: 15px;
-    letter-spacing: 1px;
-    color: white;
-    font-family: Trebuchet MS,微軟正黑體;
-    font-weight:bold;
-    border-bottom: solid 3px white;
-    display: inline-block;
-    height: 20px;
-    padding: 8px;
-    width: 18%;
-    padding-left: 21px;
-    padding-right: 21px;
-    font-family: 微軟正黑體;
-    text-align: center;
-}
-.nav:hover{
-    border-bottom: solid 3px #FFD43A;
-    cursor: pointer;
-}
-.suggest_block{
-  height: 840px;
-}
-
-
 .left_block {
-  position: absolute;
-  display: inline-block;
-  width: 640px;
-  height: 640px;
-  left: 3%;
-  margin: 0;
-  margin-top: 20px;
-  padding: 0;
-}
-
-.left_container {
-  position: relative;
-  left:10%;
-  top: 5%;
-  width: 80%;
-  height: 45%;
-}
-
-.photo {
+  background-image: url("/static/img/p3_1.jpg");
+  height: 250px;
   width: 100%;
-  height: 100%;
+  left: 3%;
+  margin: 0 30px;
+  padding: 0;
 }
 
 .left_title {
@@ -89,12 +16,11 @@ a:visited{
   letter-spacing: 1px;
   color: white;
   font-family: Trebuchet MS,微軟正黑體;
-  position: absolute;
-  left: 0;
-  top: 45%;
+  
   width: 100%;
   text-align: center;
   margin: 0;
+  margin-top: 20%;
   font-weight: 900;
 }
 .left_title:hover{
@@ -102,20 +28,19 @@ a:visited{
     cursor: pointer;
 }
 .left_text {
-    position: relative;
- 
+   
   font-size: 30px;
   font-weight: 800;
   letter-spacing: 1px;
   color: #2C3641;
   font-family: Trebuchet MS,微軟正黑體;
-  margin-top: 40px;
+  margin-top: 20px;
   margin-bottom:5px; 
   text-align: center;
 }
 
 .right_block {
-  position: absolute;
+  position: relative;
   width: 50%;
   height: 90%;
   left: 50%;
@@ -128,15 +53,15 @@ a:visited{
 
 }
 .state_text_block{
-    position: relative;
+   
     margin-top: 20px;
     border: solid #ECEEF2;
-    left: 10%;
+    
     background-color: #ECEEF2;
-    width: 80%;
+    
 }
 
-.title {
+.suggestion_title {
     font-size: 30px;
     font-weight: 900;
   letter-spacing: 0px;
@@ -146,7 +71,7 @@ a:visited{
   margin-bottom: 4px;
 }
 
-hr {
+.sug_hr {
   margin: 0;
   padding: 0;
   position: relative;
@@ -159,7 +84,6 @@ hr {
 
 .suggest_block {
   text-align: center;
-  position: relative;
   
 }
 
@@ -174,27 +98,30 @@ hr {
   margin:0; 
   padding-top:10px;
 }
-
+/* 
 .text {
   font-size: 25px;
   letter-spacing: 0;
   color: #2C3641;
   font-family: Trebuchet MS,微軟正黑體,微軟正黑體;
   text-align: center;
-}
+} */
 
 .s_block {
-  position: relative;
   margin: auto;
-  top:30px;
   border: solid #ECEEF2;
   padding: 10px;
   padding-top:20px;
-  width: 500px;
-  height: 300px;
   background-color: #ECEEF2;
 }
-
+.box{
+  border: 3px #c9cbce;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 50%;
+  height: 50%;
+}
 .box1 {
   border: 3px #c9cbce;
   position: absolute;
@@ -265,7 +192,9 @@ hr {
   margin: 0;
   padding: 0;
   padding: 5px;
+
 }
+  /* 
 .footer_area {
   height: 300px;
   background-color: #272D38;
@@ -343,4 +272,4 @@ hr {
   position: absolute;
   right: 11%;
   bottom: 20px;
-}
+} */
