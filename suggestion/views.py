@@ -2,6 +2,7 @@ from django.shortcuts import render
 from backend.models import indexData
 from django.views import View
 from backend.models import portfolio
+import json
 # Create your views here.
 class suggestion(View):
     template_name = 'suggestion.html'
@@ -18,7 +19,8 @@ class suggestion(View):
         num_4="0"
         type_string=""
         s=portfolio(cycle)#傳送目前景氣
-
+        aggr=json.loads(s.aggressive)
+        cons=json.loads(s.conservative)
         return render(request, self.template_name,locals())
 
 
