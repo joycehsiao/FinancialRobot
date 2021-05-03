@@ -2,6 +2,25 @@
 {% load static %}
 
 {% block content %}
+{% autoescape off %}
+<script>
+  function setType(t,s){
+    var type= {{type_no}} ;
+    if (t==1){
+      value=s.aggressive;
+    }
+    else if (t==2){
+      value=s.conservative;
+    }
+    document.getElementById("box1").innerHTML=(value.EF); 
+    document.getElementById("box2").innerHTML=(value["EMB"]); 
+    document.getElementById("box3").innerHTML=(value["HYB"]); 
+    document.getElementById("box4").innerHTML=(value["IGCB"]);
+    console.log(type)
+  }
+</script>
+{% endautoescape %}
+
 <link href='{%static "css/suggestion.css"%}'rel="stylesheet">
 <div class="container suggestion_container">
     <div class="row ">
@@ -9,13 +28,13 @@
             <div class="row">
                 <div class="left_block">
                     <!-- <img class="col-12"src='{%static "img/p3_1.jpg" %}'> -->
-                    <p class="left_title" id="aggressive"onclick="">積極</p>
+                    <p class="left_title" id="aggressive"onclick="setType(1,{{s}})">積極</p>
                 </div>
                 
                 <div class="left_block">
                     
                     <!-- <img class="col-12"src='{%static "img/p3_2.jpg" %}' alt=""> -->
-                    <p class="left_title"id="conservative"onclick="">保守</p>
+                    <p class="left_title"id="conservative"onclick="setType(2,{{s}})">保守</p>
                 </div>
             </div>
             
@@ -27,13 +46,14 @@
         <div class="col-6 ">
             <div class="row">
                 <div class=" col-12 suggest_block">
-                    <p class="suggestion_title">現今景氣階段 <p>[最後更新日期/]</p></p>
+                    <p class="suggestion_title">現今景氣階段 <p>[最後更新日期/{{date}}]</p></p>
                     <hr class="sug_hr">
                     <div class="state_text_block">
-                      <p class="state" id="state"><%= test %></p>
-                      <p class="text"><%= i %></p>
+                      <p class="state" id="state">{{s.state}}</p>
+                      <p class="text">{{s.intro}}</p>
                     </div>
                 </div>
+                
                 <div class="col-12">
                     <div class="suggest_block">
                         <p class="suggestion_title">我們的建議</p>
@@ -41,19 +61,19 @@
                         <div class="s_block row">
                           <div class="box col-6">
                             <p class="box_title">股票型基金</p>
-                            <p class="box_num" id="box1">{{num_1}}</p>
+                            <p class="box_num" id="box1">0</p>
                           </div>
                           <div class="box col-6">
                             <p class="box_title">新興市場債基金</p>
-                            <p class="box_num"id="box2">{{num_2}}</p>
+                            <p class="box_num"id="box2">0</p>
                           </div>
                           <div class="box col-6">
                             <p class="box_title">高收益債基金</p>
-                            <p class="box_num"id="box3">{{num_3}}</p>
+                            <p class="box_num"id="box3">0</p>
                           </div>
                           <div class="box col-6" >
                             <p class="box_title">投資等級債基金</p>
-                            <p class="box_num"id="box4">{{num_4}}</p>
+                            <p class="box_num"id="box4">0</p>
                           </div>
                          
                           
