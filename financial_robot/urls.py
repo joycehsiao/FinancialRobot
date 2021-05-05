@@ -21,4 +21,5 @@ urlpatterns = [
     path('', include('index.urls')),
     path('suggestion/', include('suggestion.urls')),
     path('backend/', include('backend.urls')),
+    path('chart/', include('chart.urls')),
 ]

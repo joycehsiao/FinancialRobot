@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://code.highcharts.com/highcharts.js"></script>
+<!-- <script src="https://img.hcharts.cn/highcharts/modules/exporting.js"></script>
+<script src="https://img.hcharts.cn/highcharts/modules/series-label.js"></script>
+<script src="https://img.hcharts.cn/highcharts/modules/oldie.js"></script>
+<script src="https://img.hcharts.cn/highcharts-plugins/highcharts-zh_CN.js"></script>
+<script src="https://img.hcharts.cn/highcharts/themes/dark-unica.js"></script> -->
+
+<script src='{%static "js/chart.js"%}'></script>
+
+
+<div id="container"class="container">
+    <div class="text">
+        <br>
+        
+        <form  class="dateForm"name="dateForm"  >
+          <p>在</p>
+            <input class="date" type="month" name="userDay" id="userDay" min="2000-01" max="2017-11" value="2001-01">
+            <p>將<p class="left_text">10</p> 元投入市場 </p>
+            <input class="btn" type="button" onclick="get_action()" value="check">
+        </form>
+        <div id="chart" style="width: 550px; height: 400px; margin: 0 auto"></div>
+      </div>
+</div>
+<script>
+  var p={{predict_data}};
+  var h={{half_data}};
+  var c={{con_data}};
+  
+  set_data(p,h,c);
+</script>
+{% endblock  %}
+
+
