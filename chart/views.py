@@ -10,9 +10,9 @@ class chart(View):
     template_name = 'chart.html'
     
     def get(self,request):
-        predict_data=cal_chart.draw_predict(0)
-        half_data=cal_chart.draw_predict(0)
-        con_data=cal_chart.draw_conservative(0)
+        predict_data=cal_chart.draw_predict(1)
+        half_data=cal_chart.draw_fifty(1)
+        con_data=cal_chart.draw_conservative(1)
         return render(request, self.template_name,locals())
 
 

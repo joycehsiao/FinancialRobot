@@ -43,7 +43,16 @@ def draw_conservative(num):
                           SBWBL*(data["index_5"][i+1]/data["index_5"][i]))
         monthly_Settlement.append(total)
     return monthly_Settlement
-
+def draw_fifty(num):
+    data = pd.DataFrame(list(FiveIndexByMonth.objects.all().values()))
+    total = 10
+    monthly_Settlement = []
+    MXWD, SBWBL = 0.5, 0.5
+    for i in range(num,data.shape[0]-1):
+        total = total * ( MXWD*(data["index_1"][i+1]/data["index_1"][i])+
+                          SBWBL*(data["index_5"][i+1]/data["index_5"][i]))
+        monthly_Settlement.append(total)
+    return monthly_Settlement
 
 # def get_json(num,monthly_Settlement,data_name):
 #     data_list=[]

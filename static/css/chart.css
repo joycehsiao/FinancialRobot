@@ -1,126 +1,36 @@
-@charset "UTF-8";
-html, body {
-  margin: 0;
-  padding: 0px;
+.chart_container{
+  margin-top: 100px;;
 }
-p{
-  margin:0;
-  display: inline;
-}
-a {
-  text-decoration:none;
-}
-a:visited{
-  color:#272D38;
-}
-.contenter {
-  position: relative;
-  width: 1280px;
-}
-.banner {
-  width: 100%;
-  
-}
-.header {
-  width: 100%;
-}
-
-.nav-area {
-  position: absolute;
-    left: 50%;
-   
-    transform: translateX(-45%) translateY(-50%);
-    padding-left: 20px;
-   padding-right: 20px;
-   top: 57.3px;
-   width: 54%;
-  background-color: white;
-}
-.nav-block{
-  height: 100px;
-}
-.nav {
-  font-size: 15px;
-  letter-spacing: 1px;
-  color: white;
-  font-family: Trebuchet MS,微軟正黑體;
-  font-weight:bold;
-  border-bottom: solid 3px white;
-  display: inline-block;
-  height: 20px;
-    padding: 8px;
-    width: 18%;
-    padding-left: 21px;
-    padding-right: 21px;
-    font-family: 微軟正黑體;
-    text-align: center;
-}
-.nav:hover{
-    border-bottom: solid 3px #FFD43A;
-    cursor: pointer;
-}
-.suggest_block{
-  padding:0 25%;
-  height:400px;
-  text-align: center;
-  
-}
-.dateForm{
+.date_form{
   width: 800px;
   padding-left: 10px;
   display: inline-block;
   
 }
-.text{
-  text-align: center;
-  font-weight: bold;
-  font-size: 20px;
-  width: 100%;
-  margin-bottom: 20px;
-  padding-bottom: 50px;
-  margin-top:0; 
-  left: 0;
-  display: inline-block;
-  font-family: 微軟正黑體;  
-}
-.left_block {
-  font-family: 微軟正黑體;
-  position: absolute;
-  width: 40%;
-  height: 75%;
-  margin: 0;
-  margin-left: 5%;
-  padding: 0;
-  font-size: 40px;
-  font-weight: 800;
-  letter-spacing: 1px;
-  color: #272D38;
-  padding-top: 5px;
-  
-}
 .left_text {
-    position: relative;
+    
   display: inline;
   font-size: 35px;
   font-weight: 800;
   letter-spacing: 1px;
   color: #FFD43A;
   font-family: 微軟正黑體;
-  margin:0;
-  padding:0;
+  /* margin:0;
+  padding:0; */
 }
-.date{
+.chart_date{
   display: inline-block;
-  width:200px;
+  /* width:200px; */
   height:35px;
   background-color:#272D38;
   color: #FFD43A;
   border:none;
   text-align:center;
+  margin-bottom: 1rem;
+  padding: 0 0.5rem;
 }
-.btn{
+.chart_btn{
  
-  width:50px;
   height:25px;
   background-color:#FFD43A;
   text-align:center;
@@ -146,82 +56,4 @@ a:visited{
     margin-top:3%;
     width:50%;
     background-color: #272D38;
-}
-.footer_area {
-  height: 300px;
-  background-color: #272D38;
-}
-
-.footer_title {
-  font-size: 25px;
-  font-weight: 900;
-  letter-spacing: 1px;
-  color: white;
-  font-family: 微軟正黑體;
-}
-
-.footer_text {
-  font-size: 13px;
-  letter-spacing: 0;
-  color: white;
-  font-family: 微軟正黑體;
-  padding: 5px;
-}
-
-.footer_school {
-  position: absolute;
-  height: 200px;
-  width: 20%;
-  padding-top: 20px;
-  margin: 0;
-  left: 8%;
-  text-align: left;
-}
-
-.footer_contact {
-  position: absolute;
-  height: 200px;
-  width: 20%;
-  padding-top: 20px;
-  margin: 0;
-  left: 32%;
-  text-align: left;
-}
-
-.footer_department {
-  position: absolute;
-  height: 200px;
-  width: 20%;
-  padding-top: 20px;
-  margin: 0;
-  left: 50%;
-  text-align: left;
-}
-
-.footer_language {
-  position: absolute;
-  height: 200px;
-  width: 20%;
-  padding-top: 20px;
-  margin: 0;
-  left: 73%;
-  text-align: left;
-}
-
-.footer_hr {
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  width: 85%;
-  left: 50px;
-  bottom: 20%;
-  size:15px;
-  border:solid 1px #494F58;
-  background-color: #494F58;
-}
-
-.footer_logo {
-  position: absolute;
-  right: 11%;
-  bottom: 20px;
 }
