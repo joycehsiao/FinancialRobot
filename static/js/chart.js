@@ -12,9 +12,9 @@
                 this.con_data=c;
 
                 for(var i =0;i<this.pred_data.length;i++){ //num是使用者輸入的月份距離2001有幾個月
-                        this.pred_json.data[i]=[Date.UTC(2001,i+num,1),this.pred_data[i]]
-                        this.half_json.data[i]=[Date.UTC(2001,i+num,1),this.half_data[i]]
-                        this.con_json.data[i]=[Date.UTC(2001,i+num,1),this.con_data[i]]
+                        this.pred_json.data[i]=[Date.UTC(2001,i+num,1),this.pred_data[i+num]]
+                        this.half_json.data[i]=[Date.UTC(2001,i+num,1),this.half_data[i+num]]
+                        this.con_json.data[i]=[Date.UTC(2001,i+num,1),this.con_data[i+num]]
                 }
                 draw(num,this.pred_json,this.half_json,this.con_json)
         }
