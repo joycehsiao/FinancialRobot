@@ -3,7 +3,7 @@ import csv
 from backend.models import indexData
 # Create your views here.
 def import_data(request): 
-    with open("rawdata.csv",encoding="utf-8") as f:
+    with open("./rawdata.csv",encoding="utf-8") as f:
         reader = csv.reader(f)
         csv_reader = csv.reader(f, delimiter=',')
         for row in csv_reader:
