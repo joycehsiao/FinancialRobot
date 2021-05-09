@@ -1,1 +1,1 @@
-web: gunicorn finaicial_robot.wsgi
+web: gunicorn --pythonpath finaicial_robot.wsgi --log-file -
